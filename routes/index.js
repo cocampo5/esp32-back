@@ -5,6 +5,7 @@ var fs = require('fs')
 const process = require('process');
 
 var currentValue = 0
+var jsonRes
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -13,7 +14,8 @@ router.get('/', function(req, res, next) {
 
 /* GET sensor. */
 router.get('/sensor', function(req, res, next) {
-  res.send((currentValue));
+  res.setHeader('Content-Type', 'application/json');
+  res.end(jsonRes);
 });
 
 console.log('building client');
@@ -39,9 +41,8 @@ client.subscribe('esp32/pub', function(error, granted) {
 })
 
 client.on('message', (topic, message) => {
-  console.log(JSON.parse(message.toString()).sensor)
-  currentValue = JSON.parse(message.toString())
-  console.log(message.toString());
+  console.log(message.toString())
+  jsonRes = message.toString()
 });
 
 module.exports = router;
