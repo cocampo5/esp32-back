@@ -1,0 +1,42 @@
+Arguments: 
+  /home/cristobal/.nvm/versions/node/v18.16.0/bin/node /home/cristobal/.nvm/versions/node/v18.16.0/bin/yarn install
+
+PATH: 
+  /home/cristobal/.nvm/versions/node/v18.16.0/bin:/home/cristobal/miniconda3/bin:/home/cristobal/miniconda3/condabin:/home/cristobal/.deno/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04onWindows_2004.2022.8.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Arduino CLI:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.1:/mnt/c/Users/cocam/AppData/Local/Programs/Python/Python310/Scripts:/mnt/c/Users/cocam/AppData/Local/Programs/Python/Python310:/mnt/c/Users/cocam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/FFAIO/Loader/FFA/platform-tools:/mnt/c/Users/cocam/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/cocam/anaconda3/condabin:/mnt/c/Users/cocam/AppData/Local/JetBrains/Toolbox/scripts:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+
+npm manifest: 
+  {
+    "name": "workspace",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.4",
+      "debug": "~2.6.9",
+      "express": "~4.16.1",
+      "http-errors": "~1.6.3",
+      "jade": "~1.11.0",
+      "morgan": "~1.9.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
